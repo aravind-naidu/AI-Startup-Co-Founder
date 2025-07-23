@@ -37,7 +37,7 @@ A curious take on solving a personal problem using Agentic AI — going from ide
 If you found this useful or fun:
 
 - ⭐ Star the repo  
-- 👏 Clap on [my Medium post](https://medium.com/@aravind.ai)  
+- 👏 Clap on [my Medium post](https://aravind-ai.medium.com/)  
 - 🤝 Connect with me for deeper conversations on:
   - Multi-Agent Systems  
   - GenAI in production  
