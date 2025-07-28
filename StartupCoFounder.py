@@ -1,9 +1,9 @@
 from phi.agent import Agent
-from phi.model.openai import OpenAI
+from phi.model.ollama import Ollama
 from phi.tools.duckduckgo import DuckDuckGo
 
 # Initialize LLM and search tool
-llm = OpenAI(model="gpt-4", api_key="your-openai-api-key")
+llm = Ollama(id="llama3.1:8b")
 search = DuckDuckGo()
 
 import warnings
@@ -20,7 +20,7 @@ idea_agent = Agent(
         "Give a score out of 10 with reasoning.",
         "Keep it short and structured."
     ],
-    show_tool_calls=True,
+    show_tool_calls=False,
     markdown=True
 )
 
@@ -33,7 +33,7 @@ market_agent = Agent(
         "Estimate TAM/SAM/SOM, identify top competitors and trends.",
         "Summarize clearly in bullet points."
     ],
-    show_tool_calls=True,
+    show_tool_calls=False,
     markdown=True
 )
 
@@ -46,7 +46,7 @@ biz_agent = Agent(
         "Propose revenue streams, pricing, and key metrics.",
         "Keep suggestions concise."
     ],
-    show_tool_calls=True,
+    show_tool_calls=False,
     markdown=True
 )
 
